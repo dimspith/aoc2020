@@ -7,7 +7,7 @@ block solution01:
     password: string
     correctPasswords: int
 
-  for line in lines "dataset":
+  for line in lines "input02":
     if scanf(line, "$i-$i $+: $+$.", minLet, maxLet, letter, password):
       if password.count(letter) in minLet..maxLet:
         inc correctPasswords
@@ -21,7 +21,7 @@ block solution02:
     password: string
     correctPasswords: int
 
-  for line in lines "dataset":
+  for line in lines "input02":
     if scanf(line, "$i-$i $+: $+$.", pos1, pos2, letter, password):
       if pos1 > password.len or pos2 > password.len:
         discard
