@@ -1,7 +1,7 @@
 import strutils, sequtils
 
 # Read file into a seq of ints
-let input = readFile("../dataset").split("\n").map(parseInt)
+let input = readFile("input01").split("\n").map(parseInt)
 
 # Ints we have checked so far
 var checked: seq[int]
